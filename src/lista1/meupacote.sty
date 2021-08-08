@@ -12,6 +12,7 @@
 \RequirePackage{import}
 \RequirePackage{color}			      % Controle das cores
 \RequirePackage{xcolor}
+\RequirePackage{tikz}
 
 \newcounter{instn}
 \setcounter{instn}{1}
@@ -24,7 +25,7 @@
 
 \newenvironment{question}
  {
-    \myline{\instnum} 
+    \section*{\myline{\instnum}}
     }
     {
  }

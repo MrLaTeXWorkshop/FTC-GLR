@@ -1,5 +1,117 @@
 \begin{question}
-	há fazer questão 1
+\begin{figure}[ht]
+\centering
+\resizebox{.2\columnwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={on grid},
+  setA/.style={fill=blue,circle,inner sep=2pt},
+  setC/.style={fill=red,rectangle,inner sep=2pt},
+  every fit/.style={draw,fill=blue!15,ellipse,text width=25pt},
+  >=latex
+]
+
+% set A
+\node[setA,label=left:$a$] (a) {};
+\node [setA,below = of a,label=left:$b$] (b) {};
+\node [setA,below = of b,label=left:$c$] (c) {};
+\node[above=of a,anchor=south] {$A$};
+
+% set B
+\node[inner sep=0pt,right=3cm of a] (x) {$x$};
+\node[below = of x] (y) {$y$};
+\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[above=of x,anchor=south] {$B$};
+
+% the arrows
+\draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
+\draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (y);
+\draw[->] (c) -- node[label=above:$g$] {} (z);
+
+% the boxes around the sets
+\begin{pgfonlayer}{background}
+\node[fit= (a)  (c) ] {};
+\node[fit= (x) (z) ] {};
+\end{pgfonlayer}
+\end{tikzpicture}
+}
+\caption{f não é total, mas é injetora e sobrejetora.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\resizebox{.2\columnwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={on grid},
+  setA/.style={fill=blue,circle,inner sep=2pt},
+  setC/.style={fill=red,rectangle,inner sep=2pt},
+  every fit/.style={draw,fill=blue!15,ellipse,text width=25pt},
+  >=latex
+]
+
+% set A
+\node[setA,label=left:$a$] (a) {};
+\node [setA,below = of a,label=left:$b$] (b) {};
+\node [setA,below = of b,label=left:$c$] (c) {};
+\node[above=of a,anchor=south] {$A$};
+
+% set B
+\node[inner sep=0pt,right=3cm of a] (x) {$x$};
+\node[below = of x] (y) {$y$};
+\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[above=of x,anchor=south] {$B$};
+
+% the arrows
+\draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
+\draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (x);
+\draw[->] (c) -- node[label=above:$g$] {} (y);
+
+% the boxes around the sets
+\begin{pgfonlayer}{background}
+\node[fit= (a)  (c) ] {};
+\node[fit= (x) (z) ] {};
+\end{pgfonlayer}
+\end{tikzpicture}
+}
+\caption{f não é total, mas é injetora e sobrejetora.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\resizebox{.2\columnwidth}{!}{%
+\begin{tikzpicture}[
+  every node/.style={on grid},
+  setA/.style={fill=blue,circle,inner sep=2pt},
+  setC/.style={fill=red,rectangle,inner sep=2pt},
+  every fit/.style={draw,fill=blue!15,ellipse,text width=25pt},
+  >=latex
+]
+
+% set A
+\node[setA,label=left:$a$] (a) {};
+\node [setA,below = of a,label=left:$b$] (b) {};
+\node [setA,below = of b,label=left:$c$] (c) {};
+\node[above=of a,anchor=south] {$A$};
+
+% set B
+\node[inner sep=0pt,right=3cm of a] (x) {$x$};
+\node[below = of x] (y) {$y$};
+\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[above=of x,anchor=south] {$B$};
+
+% the arrows
+\draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
+\draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (y);
+\draw[->] (c) -- node[label=above:$g$] {} (z);
+
+% the boxes around the sets
+\begin{pgfonlayer}{background}
+\node[fit= (a)  (c) ] {};
+\node[fit= (x) (z) ] {};
+\end{pgfonlayer}
+\end{tikzpicture}
+}
+\caption{f não é total, mas é injetora e sobrejetora.}
+\end{figure}
 \end{question}
 
 \newpage
