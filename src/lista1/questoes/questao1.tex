@@ -1,4 +1,6 @@
 \begin{question}
+
+ $\int$ : R* $\rightarrow$ R tal que f(x) = 2x
 \begin{figure}[ht]
 \centering
 \resizebox{.2\columnwidth}{!}{%
@@ -11,32 +13,31 @@
 ]
 
 % set A
-\node[setA,label=left:$a$] (a) {};
-\node [setA,below = of a,label=left:$b$] (b) {};
-\node [setA,below = of b,label=left:$c$] (c) {};
+\node[setA,label=left:$4$] (a) {};
+\node [setA,below = of a,label=left:$2$] (b) {};
 \node[above=of a,anchor=south] {$A$};
 
 % set B
-\node[inner sep=0pt,right=3cm of a] (x) {$x$};
-\node[below = of x] (y) {$y$};
-\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[inner sep=0pt,right=3cm of a] (x) {$4$};
+\node[below = of x] (y) {$2$};
+\node[inner sep=0pt,below = of y] (z) {$0$};
 \node[above=of x,anchor=south] {$B$};
 
 % the arrows
 \draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
 \draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (y);
-\draw[->] (c) -- node[label=above:$g$] {} (z);
 
 % the boxes around the sets
 \begin{pgfonlayer}{background}
-\node[fit= (a)  (c) ] {};
+\node[fit= (a)  (b) ] {};
 \node[fit= (x) (z) ] {};
 \end{pgfonlayer}
 \end{tikzpicture}
 }
-\caption{f não é total, mas é injetora e sobrejetora.}
+\caption{f é total e injetora, mas não sobrejetora.}
 \end{figure}
 
+$\int$ : R $\rightarrow$ R+ tal que f(x) = x$^{2}$
 \begin{figure}[ht]
 \centering
 \resizebox{.2\columnwidth}{!}{%
@@ -49,32 +50,29 @@
 ]
 
 % set A
-\node[setA,label=left:$a$] (a) {};
-\node [setA,below = of a,label=left:$b$] (b) {};
-\node [setA,below = of b,label=left:$c$] (c) {};
+\node[setA,label=left:$2$] (a) {};
+\node [setA,below = of a,label=left:$-2$] (b) {};
 \node[above=of a,anchor=south] {$A$};
 
 % set B
-\node[inner sep=0pt,right=3cm of a] (x) {$x$};
-\node[below = of x] (y) {$y$};
-\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[inner sep=0pt,right=3cm of a] (x) {$4$};
 \node[above=of x,anchor=south] {$B$};
 
 % the arrows
 \draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
 \draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (x);
-\draw[->] (c) -- node[label=above:$g$] {} (y);
 
 % the boxes around the sets
 \begin{pgfonlayer}{background}
-\node[fit= (a)  (c) ] {};
+\node[fit= (a)  (b) ] {};
 \node[fit= (x) (z) ] {};
 \end{pgfonlayer}
 \end{tikzpicture}
 }
-\caption{f não é total, mas é injetora e sobrejetora.}
+\caption{f é total e sobrejetora, mas não injetora.}
 \end{figure}
 
+ $\int$ : N $\rightarrow$ N tal que f(x) = 2x - 1
 \begin{figure}[ht]
 \centering
 \resizebox{.2\columnwidth}{!}{%
@@ -87,26 +85,24 @@
 ]
 
 % set A
-\node[setA,label=left:$a$] (a) {};
-\node [setA,below = of a,label=left:$b$] (b) {};
-\node [setA,below = of b,label=left:$c$] (c) {};
+\node[setA,label=left:$2$] (a) {};
+\node [setA,below = of a,label=left:$1$] (b) {};
+\node [setA,below = of b,label=left:$0$] (c) {};
 \node[above=of a,anchor=south] {$A$};
 
 % set B
-\node[inner sep=0pt,right=3cm of a] (x) {$x$};
-\node[below = of x] (y) {$y$};
-\node[inner sep=0pt,below = of y] (z) {$z$};
+\node[inner sep=0pt,right=3cm of a] (x) {$3$};
+\node[below = of x] (y) {$1$};
 \node[above=of x,anchor=south] {$B$};
 
 % the arrows
 \draw[->,shorten >= 3pt] (a) -- node[label=above:$f$] {} (x);
 \draw[->,shorten >= 3pt] (b) -- node[label=above:$f$] {} (y);
-\draw[->] (c) -- node[label=above:$g$] {} (z);
 
 % the boxes around the sets
 \begin{pgfonlayer}{background}
 \node[fit= (a)  (c) ] {};
-\node[fit= (x) (z) ] {};
+\node[fit= (x) (y) ] {};
 \end{pgfonlayer}
 \end{tikzpicture}
 }
