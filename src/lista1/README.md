@@ -7,9 +7,9 @@
 	* f não é total, mas é injetora e sobrejetora.
 	
 	
-## Questão 2. Prove que {n3 + 3n2 + 3n | n $\geq$ 0} = {n3 – 1 | n > 0 }.
+## Questão 2. Prove que {n3 + 3n2 + 3n | n ≥ 0} = {n3 – 1 | n > 0 }.
 
-## Questão 3. Prove que (A $\cap$ B)’ = A’ $\cup$ B’.
+## Questão 3. Prove que (A ⋃ B)’ = A’ ⋂ B’.
 
 ## Questão 4. Defina recursivamente a operação de multiplicação sobre N, usando sucessor e a operação de adição.
 
@@ -23,6 +23,6 @@
 	
 ### Obs: uma relação binária = sobre X é uma relação de equivalência se é:
 
-1. Reflexiva: a $\equiv$ a para todo a $\in$ X.
-2. Simétrica: a $\equiv$ b implica b $\equiv$ a.
-3. Transitiva: a $\equiv$ b e b $\equiv$ c implica a $\equiv$ c.
+1. Reflexiva: a ≣ a para todo a ∊ X.
+2. Simétrica: a ≣ b implica b ≣ a.
+3. Transitiva: a ≣ b e b ≣ c implica a ≣ c.
