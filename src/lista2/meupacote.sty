@@ -1,0 +1,32 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{meupacote}[2014/08/24 Example LaTeX package]
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[brazil]{babel}
+\RequirePackage{hyperref}
+\RequirePackage[a4paper,top=3.5cm,left=3cm,right=3cm,bottom=2.5cm]{geometry}
+\RequirePackage{pgfplots}
+\RequirePackage{enumitem}
+\RequirePackage{amsmath}
+\RequirePackage{graphicx}
+\RequirePackage{import}
+\RequirePackage{color}			      % Controle das cores
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{indentfirst}
+
+\newcounter{instn}
+\setcounter{instn}{1}
+\newcommand{\instnum}{\arabic{instn}}
+
+\newcommand{\myline}[1]{
+    Questão \emph{\textbf{#1.}}
+    \addtocounter{instn}{1}
+}
+
+\newenvironment{question}
+ {
+    \section*{\myline{\instnum}}
+    }
+    {
+ }
