@@ -1,28 +1,21 @@
-# Lista 1
+# Lista 2
 
-## Questão 1. Dê exemplos de funções f : N → N tais que:
-
-	* f é total e injetora, mas não sobrejetora.
-	* f é total e sobrejetora, mas não injetora.
-	* f não é total, mas é injetora e sobrejetora.
-	
+## Questão 1. Dê a definição recursiva do conjunto de strings sobre o alfabeto { a, b } que contenha um número par de b ́s.
 	
 ## Questão 2. Prove que {n3 + 3n2 + 3n | n ≥ 0} = {n3 – 1 | n > 0 }.
 
+  a. (ba) + (a*b* U a*) = (ba)* ba+ (b* U λ).
+  b.  b+ (a*b*  U  λ ) b  =  b (b*a* U λ)  b+.
+
 ## Questão 3. Prove que (A ⋃ B)’ = A’ ⋂ B’.
 
-## Questão 4. Defina recursivamente a operação de multiplicação sobre N, usando sucessor e a operação de adição.
-
-## Questão 5. Prove que 1 + 2n < 3 n para todo n > 2.
-
-## Questão 6. Forneça uma relação que satisfaça a condição:
-
-	* ser reflexiva e simétrica mas não transitiva.
-	* ser reflexiva e transitiva mas não simétrica.
-	* ser simétrica e transitiva mas não reflexiva.
-	
-### Obs: uma relação binária = sobre X é uma relação de equivalência se é:
-
-1. Reflexiva: a ≣ a para todo a ∊ X.
-2. Simétrica: a ≣ b implica b ≣ a.
-3. Transitiva: a ≣ b e b ≣ c implica a ≣ c.
+	a. Σ = {a, b} de tamanho >= 2, no qual todos os a’s precedem todos os b’s.
+	b. Σ = {a, b} que contém o substring aa.
+	c. Σ = {a, b} que possui exatamente um par  aa.
+	d. Σ = {a, b, c} que começa com a, contém exatamente dois b’s e termina com cc.
+	e. Σ = {a, b} que contém o substring  ab  e  o substring ba.
+	f. Σ = {a, b, c} que contém o substring aa, bb e cc.
+	g. Σ = {a, b, c} no qual cada b é imediatamente seguido por pelo menos um c.
+	h. Σ = {a, b, c} de tamanho 3.i.  = {a, b, c} com tamanho menor que 3.
+	j. Σ = {a, b, c} com tamanho maior que 3.
+	k. Σ = {a, b} com um número par de a’s e impar de b
