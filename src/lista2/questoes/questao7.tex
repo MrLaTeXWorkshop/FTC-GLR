@@ -1,0 +1,54 @@
+\begin{question}
+  
+   \begin{enumerate}[label=\textbf{\alph*})]
+   
+   		\item 
+   		
+   		Hipótese: $L = \{0^{n}$ $1^{m} | m,n \geq 0 \}$ é regular
+   		
+   		0* 1*
+   		
+   		Existe um AFD-M com K estados tal que L(M) = L.
+   		
+   		Ex: w = $0^{K}$ $1^{K} \in L$
+   		
+   		w tem que ser reconhecido pela máquina M, ou seja, w $\in$ L(M) \\
+   		
+   		|w| >= K, pois |w| = 2k \\
+   		
+   		\begin{align*}
+   		   1) & w = pvq \\
+   		   2) & | pv | \leq k \\
+   		   3) & | v | > 0, v \neq \lambda \\
+   		   4) & w_i = p(v)^{i} q  \in L \forall i \geq 0 \\
+   		\end{align*}   		   		
+   		
+   		\textbf{Resultado:} Sim, é regular
+   		
+   		\item 
+   	
+   		Hipótese: $L = \{0^{n}$ $1^{m}$ $0^{n} | m,n \geq 0 \}$ é regular
+   		
+   		0* 1* 0*
+   		
+   		Existe um AFD-M com K estados tal que L(M) = L.
+   		
+   		Ex: w = $0^{K}$ $ 10^{K} \in L$
+   		
+   		w tem que ser reconhecido pela máquina M, ou seja, w $\in$ L(M) \\
+   		
+   		|w| >= K, pois |w| = 2k + 1 \\
+   		
+   		\begin{align*}
+   		   1) & w = pvq \\
+   		   2) & | pv | \leq k \\
+   		   3) & | v | > 0, v \neq \lambda \\
+   		   4) & w_i = p(v)^{i} q  \in L \forall i \geq 0 \\
+   		\end{align*}   		  
+   		
+   		\textbf{Resultado:} Não, não é regular
+   		
+   \end{enumerate}
+\end{question}
+
+\newpage

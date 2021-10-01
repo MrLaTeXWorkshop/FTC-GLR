@@ -15,15 +15,18 @@
 \RequirePackage{tikz}
 \RequirePackage{indentfirst}
 \RequirePackage{pgffor}
+\RequirePackage{float}
 
 \newcounter{instn}
-\setcounter{instn}{1}
+\setcounter{instn}{7}
 \newcommand{\instnum}{\arabic{instn}}
 
 \newcommand{\myline}[1]{
     Questão \emph{\textbf{#1.}}
     \addtocounter{instn}{1}
 }
+
+\graphicspath{{images/}}
 
 \newenvironment{question}
  {
