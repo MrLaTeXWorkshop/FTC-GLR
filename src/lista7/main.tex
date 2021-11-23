@@ -1,0 +1,16 @@
+ \documentclass[10pt,a4paper]{article}
+\usepackage{meupacote}
+\usetikzlibrary{arrows,positioning,shapes,fit,calc}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\author{Gustavo Lopes Rodrigues}
+\title{Lista GLC - FTC}
+\begin{document}
+
+	\maketitle
+
+	\foreach \n in {1,...,5}{\import{./questoes}{questao\n.tex}}	
+	
+\end{document}s
